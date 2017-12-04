@@ -5,14 +5,14 @@ from watson_developer_cloud.natural_language_understanding_v1 import Features, S
 
 
 natural_language_understanding = NaturalLanguageUnderstandingV1(
-  username="422edc6b-00b5-45ec-a7c0-51d6c8f4b375",
-  password="OvaxrE8H78hl",
+  username="",
+  password="",
   version="2017-02-27")
 
 sns_client=boto3.client(
 	"sns",
-	aws_access_key_id="AKIAJGTIL662VNVQXJ7Q",
-    aws_secret_access_key="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",
+	aws_access_key_id="",
+    aws_secret_access_key="",
     region_name="us-east-1")
 
 
@@ -60,8 +60,8 @@ def analyzeSentiment(tweetText):
 
 def receiveMessage():
     sqs = boto3.client('sqs', 
-    aws_access_key_id="AKIAJGTIL662VNVQXJ7Q",
-    aws_secret_access_key="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",
+    aws_access_key_id="",
+    aws_secret_access_key="",
     region_name = "us-east-1"
     )
 
