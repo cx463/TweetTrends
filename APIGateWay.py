@@ -13,8 +13,8 @@ host='https://search-twittermap-domain-thj2oyyhqvdauqqow5ffdxueve.us-east-1.es.a
 es = Elasticsearch([host])
 sns_client=boto3.client(
 	"sns",
-	aws_access_key_id="AKIAJGTIL662VNVQXJ7Q",
-    aws_secret_access_key="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",
+	aws_access_key_id="",
+    aws_secret_access_key="",
     region_name="us-east-1")
 
 def handler(event,context):
