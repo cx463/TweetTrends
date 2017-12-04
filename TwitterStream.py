@@ -11,15 +11,15 @@ import time
 import threading
 import json
 
-access_token = "96485252-EKxIkgmidLaFMavkkpcTr3ip6cU33wpVQvbhHDIeU"
-access_token_secret = "Qp8z0FKnCjl0V39veKdOuC5JnYicpFOZvbtCkUC8nHRqW"
-consumer_key = "OjgGOoX1iJEs3nOlAcj2O1UUg"
-consumer_secret = "yewUgn8YmJjKSok0sVVN13l9o5ZaZfUqPY2CKPpSXYE0NbJ6bC"
+access_token = ""
+access_token_secret = ""
+consumer_key = ""
+consumer_secret = ""
 arn_to_sentiment_analysis="arn:aws:sns:us-east-1:966412209653:TwitterStream-SentimentAnalysis"
 client=boto3.client(
     "sns",
-    aws_access_key_id="AKIAJGTIL662VNVQXJ7Q",
-    aws_secret_access_key="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",
+    aws_access_key_id="",
+    aws_secret_access_key="",
     region_name="us-east-1")
 
 
@@ -118,8 +118,8 @@ def sendToSQS(Message,count,requestID):
     print Message
     print requestID+"{:05d}".format(count)
     sqs = boto3.client('sqs', 
-    aws_access_key_id="AKIAJGTIL662VNVQXJ7Q",
-    aws_secret_access_key="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",
+    aws_access_key_id="",
+    aws_secret_access_key="",
     region_name = "us-east-1"
     )
 
